@@ -42,6 +42,11 @@ public class CampMemberServiceImpl implements CampMemberService {
 		campMemberRepository.deleteAll();
 	}
 
+	@Transactional
+	public void delete(CampMember campMember) {
+		campMemberRepository.delete(campMember);
+	}
+
 	@Override
 	public boolean isValidToBeMember(CampMember newCampMember) {
 		// ・リクエストのイベント企画力が1以下の場合、入隊可否はfalseとする

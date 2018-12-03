@@ -7,7 +7,7 @@ import jp.co.netprotections.batch.entity.CampMember;
 
 /**
  * CAMPメンバーのリポジトリ（DAO）
- * 
+ *
  * @author v.le
  *
  */

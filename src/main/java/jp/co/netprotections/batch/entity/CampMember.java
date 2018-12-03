@@ -69,7 +69,7 @@ public class CampMember {
 
 	/** 隊員氏名 */
 	@Column
-	private boolean enlistedPropriety;
+	private Boolean enlistedPropriety;
 
 	/**
 	 * Default Constructor
@@ -80,7 +80,7 @@ public class CampMember {
 
 	/**
 	 * 基本属性でCAMPメンバーエンティティー生成
-	 * 
+	 *
 	 * @param memberName2
 	 * @param eventPlanning2
 	 * @param cogitation2
@@ -101,7 +101,7 @@ public class CampMember {
 
 	/**
 	 * イベント企画力以外が全て0点であるかどうかの確認
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean checkAllSkillPointGreater0ExceptPlaning() {
@@ -115,7 +115,7 @@ public class CampMember {
 
 	/**
 	 * 合計が10点以下であるかどうかの確認
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean checkTotalPointLessThan10() {
@@ -127,7 +127,7 @@ public class CampMember {
 
 	/**
 	 * 合計ポイント計算
-	 * 
+	 *
 	 * @return
 	 */
 	private int totalPoint() {
