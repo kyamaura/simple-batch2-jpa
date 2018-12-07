@@ -69,16 +69,6 @@ public class CampMemberServiceImplTest {
 		  assertThat(x, is(false));
 	  }
 
-	  /**
-	   * 異常系(数値の一つがnullであるときどのような結果を返すかテストします).
-	   */
-	  @Test
-	  public void testCampMemberServiceImpl016() {
-		  ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:/spring.xml");
-		  CampMemberService campMemberService = ctx.getBean(CampMemberService.class);
-		  CampMember newCampMember = new CampMember("hama", 5, 5, 1, 5, 5);
-		  boolean x = campMemberService.isValidToBeMember(newCampMember);
-		  assertThat(x, is(false));
-	  }
+
 
 }

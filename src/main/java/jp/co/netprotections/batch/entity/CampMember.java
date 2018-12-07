@@ -69,7 +69,7 @@ public class CampMember {
 
 	/** 隊員氏名 */
 	@Column
-	private Boolean enlistedPropriety;
+	private Boolean enlistedPropriety = null;
 
 	/**
 	 * Default Constructor
